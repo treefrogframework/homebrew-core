@@ -41,6 +41,11 @@ class QtMariadb < Formula
       system "cmake", ".", *args
       system "cmake", "--build", "."
       system "cmake", "--install", "."
+
+      if OS.linux?
+        sqldrivers_dir = `qmake -query QT_INSTALL_PLUGINS`.strip + "/sqldrivers/"
+        cp "share/qt/plugins/sqldrivers/libqsqlmysql.so", sqldrivers_dir
+      end
     end
   end
 
