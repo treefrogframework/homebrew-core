@@ -8,6 +8,8 @@ class Cpi < Formula
 
   depends_on "qt"
 
+  uses_from_macos "llvm"
+
   on_linux do
     depends_on "gcc"
   end
