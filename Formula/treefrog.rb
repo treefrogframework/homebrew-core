@@ -25,8 +25,8 @@ class Treefrog < Formula
 
   depends_on xcode: :build
   depends_on "mongo-c-driver"
-  depends_on "qt"
   depends_on "pkg-config"
+  depends_on "qt"
 
   fails_with gcc: "5"
 
