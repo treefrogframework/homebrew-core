@@ -24,6 +24,7 @@ class Treefrog < Formula
   end
 
   depends_on xcode: :build
+  depends_on "cmake"
   depends_on "gflags"
   depends_on "glog"
   depends_on "mongo-c-driver"
