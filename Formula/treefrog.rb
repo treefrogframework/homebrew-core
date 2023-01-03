@@ -29,7 +29,6 @@ class Treefrog < Formula
   depends_on "gflags"
   depends_on "glog"
   depends_on "mongo-c-driver"
-  depends_on "mongo-c-driver"
   depends_on "qt"
 
   fails_with gcc: "5"
