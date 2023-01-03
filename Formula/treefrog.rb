@@ -23,12 +23,13 @@ class Treefrog < Formula
     sha256 x86_64_linux:   "c779dc8dde4b68594fc501e53a49f17b193a0c507335e608663479bde6022b35"
   end
 
+  depends_on "cmake" => :build
+  depends_on "pkg-config" => :build
   depends_on xcode: :build
-  depends_on "cmake"
   depends_on "gflags"
   depends_on "glog"
   depends_on "mongo-c-driver"
-  depends_on "pkg-config"
+  depends_on "mongo-c-driver"
   depends_on "qt"
 
   fails_with gcc: "5"
